@@ -7,6 +7,8 @@ There are also several technical issues resulting in low core vitals score, hurt
 
 Content is cluttered with jargon, unclear value propositions, and unoptimized CTAs, hindering conversions and organic visibility.  
 
+![](./seo-summary.png)
+
 ## Critical SEO Issues & Prioritized Recommendations  
 
 1. Add Meta Descriptions  

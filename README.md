@@ -3,6 +3,8 @@ https://www.informasoftware.com/
 
 I've created a modern, professional redesign of the InformaSoftware homepage. The redesign transforms the original cluttered layout into a clean, conversion-focused experience that better communicates InformaSoftware's value proposition to B2B prospects.
 
+![](redesign.png)
+
 **Here are the key improvements:**
 
 ## Design Features:

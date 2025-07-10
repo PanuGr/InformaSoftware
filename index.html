@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InformaSoftware - Custom Software Solutions That Work</title>
-    <meta name="description" content="Expert custom software development, workflow automation, and document management solutions for businesses. Transform your operations with InformaSoftware.">
-    
+    <meta name="description"
+        content="Expert custom software development, workflow automation, and document management solutions for businesses. Transform your operations with InformaSoftware.">
+
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+
     <style>
         * {
             font-family: 'Atkinson Hyperlegible', sans-serif;
         }
-        
+
         .hero-gradient {
             background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
         }
-        
+
         .section-padding {
             padding: 4rem 0;
         }
-        
+
         .service-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .service-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
-        
+
         .testimonial-bg {
             background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
         }
-        
+
         .process-step {
             position: relative;
         }
-        
+
         .process-step::after {
             content: '';
             position: absolute;
@@ -58,11 +60,11 @@
             background: #e2e8f0;
             z-index: -1;
         }
-        
+
         .process-step:last-child::after {
             display: none;
         }
-        
+
         @media (max-width: 768px) {
             .process-step::after {
                 display: none;
@@ -70,265 +72,280 @@
         }
     </style>
 </head>
+
 <body class="bg-white text-gray-900">
-    <!-- Navigation -->
-    <nav class="navbar bg-white shadow-sm fixed top-0 z-50">
-        <div class="container mx-auto px-4">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <i class="fas fa-bars text-xl"></i>
-                    </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+    <main>
+        <!-- Navigation -->
+        <nav class="navbar bg-white shadow-sm fixed top-0 z-50">
+            <div class="container mx-auto px-4">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <i class="fas fa-bars text-xl"></i>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a href="#services" class="text-gray-700 hover:text-blue-600">Services</a></li>
+                            <li><a href="#solutions" class="text-gray-700 hover:text-blue-600">Solutions</a></li>
+                            <li><a href="#about" class="text-gray-700 hover:text-blue-600">About</a></li>
+                            <li><a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+                        </ul>
+                    </div>
+                    <a href="/" class="text-2xl font-bold text-blue-600">
+                        <i class="fas fa-code mr-2"></i>InformaSoftware
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
                         <li><a href="#services" class="text-gray-700 hover:text-blue-600">Services</a></li>
                         <li><a href="#solutions" class="text-gray-700 hover:text-blue-600">Solutions</a></li>
                         <li><a href="#about" class="text-gray-700 hover:text-blue-600">About</a></li>
                         <li><a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a></li>
                     </ul>
                 </div>
-                <a href="/" class="text-2xl font-bold text-blue-600">
-                    <i class="fas fa-code mr-2"></i>InformaSoftware
-                </a>
-            </div>
-            
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a href="#services" class="text-gray-700 hover:text-blue-600">Services</a></li>
-                    <li><a href="#solutions" class="text-gray-700 hover:text-blue-600">Solutions</a></li>
-                    <li><a href="#about" class="text-gray-700 hover:text-blue-600">About</a></li>
-                    <li><a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a></li>
-                </ul>
-            </div>
-            
-            <div class="navbar-end">
-                <a href="#contact" class="btn btn-primary">Get Started</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero-gradient text-white pt-20 section-padding">
-        <div class="container mx-auto px-4">
-            <div class="hero">
-                <div class="hero-content text-center">
-                    <div class="max-w-4xl">
-                        <h1 class="text-5xl md:text-6xl font-bold mb-6">
-                            Custom Software Solutions That <span class="text-blue-200">Actually Work</span>
-                        </h1>
-                        <p class="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
-                            Transform your business operations with tailored software solutions. We build workflow automation, document management systems, and custom applications that drive real results.
-                        </p>
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a href="#contact" class="btn btn-primary btn-lg">
-                                <i class="fas fa-rocket mr-2"></i>
-                                Start Your Project
-                            </a>
-                            <a href="#solutions" class="btn btn-outline btn-lg text-white border-white hover:bg-white hover:text-blue-600">
-                                <i class="fas fa-play mr-2"></i>
-                                See Our Work
-                            </a>
-                        </div>
-                    </div>
+                <div class="navbar-end">
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="section-padding bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">What We Deliver</h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Comprehensive software solutions designed to streamline your operations and accelerate growth.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="service-card card bg-white shadow-lg hover:shadow-xl">
-                    <div class="card-body text-center">
-                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-cogs text-2xl text-blue-600"></i>
-                        </div>
-                        <h3 class="card-title justify-center mb-4">Workflow Automation</h3>
-                        <p class="text-gray-600">
-                            Eliminate manual processes and reduce errors with intelligent automation solutions tailored to your business needs.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="service-card card bg-white shadow-lg hover:shadow-xl">
-                    <div class="card-body text-center">
-                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-file-alt text-2xl text-green-600"></i>
-                        </div>
-                        <h3 class="card-title justify-center mb-4">Document Management</h3>
-                        <p class="text-gray-600">
-                            Centralize, organize, and secure your documents with powerful management systems that enhance collaboration.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="service-card card bg-white shadow-lg hover:shadow-xl">
-                    <div class="card-body text-center">
-                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-laptop-code text-2xl text-purple-600"></i>
-                        </div>
-                        <h3 class="card-title justify-center mb-4">Custom Development</h3>
-                        <p class="text-gray-600">
-                            From web applications to enterprise systems, we build custom solutions that perfectly fit your requirements.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solutions Section -->
-    <section id="solutions" class="section-padding">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">Proven Solutions</h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Real results from real implementations. See how we've transformed businesses like yours.
-                </p>
-            </div>
-            
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                         alt="Business team collaborating" 
-                         class="rounded-lg shadow-lg">
-                </div>
-                <div>
-                    <div class="space-y-6">
-                        <div class="flex items-start space-x-4">
-                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-check text-blue-600"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold mb-2">Enterprise Integration</h3>
-                                <p class="text-gray-600">Seamlessly connect your existing systems with modern APIs and custom integrations.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start space-x-4">
-                            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-check text-green-600"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold mb-2">Process Optimization</h3>
-                                <p class="text-gray-600">Identify bottlenecks and implement solutions that improve efficiency by up to 300%.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start space-x-4">
-                            <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-check text-purple-600"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold mb-2">Scalable Architecture</h3>
-                                <p class="text-gray-600">Build for today, scale for tomorrow with cloud-native solutions that grow with your business.</p>
+        </nav>
+        <!-- Hero Section -->
+        <section class="hero-gradient text-white pt-20 section-padding">
+            <div class="container mx-auto px-4">
+                <div class="hero">
+                    <div class="hero-content text-center">
+                        <div class="max-w-4xl">
+                            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                                Custom Software Solutions That <span class="text-blue-200">Actually Work</span>
+                            </h1>
+                            <p class="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
+                                Transform your business operations with tailored software solutions. We build workflow
+                                automation, document management systems, and custom applications that drive real
+                                results.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                <a href="#contact" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-rocket mr-2"></i>
+                                    Start Your Project
+                                </a>
+                                <a href="#solutions"
+                                    class="btn btn-outline btn-lg text-white border-white hover:bg-white hover:text-blue-600">
+                                    <i class="fas fa-play mr-2"></i>
+                                    See Our Work
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="section-padding bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">Our Process</h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    A proven methodology that delivers results on time and within budget.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="process-step text-center">
-                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-xl font-bold">1</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Discovery</h3>
-                    <p class="text-gray-600">We analyze your needs and define project requirements.</p>
+        </section>
+        <!-- Services Section -->
+        <section id="services" class="section-padding bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">What We Deliver</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Comprehensive software solutions designed to streamline your operations and accelerate growth.
+                    </p>
                 </div>
-                
-                <div class="process-step text-center">
-                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-xl font-bold">2</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Design</h3>
-                    <p class="text-gray-600">Create detailed specifications and user experience designs.</p>
-                </div>
-                
-                <div class="process-step text-center">
-                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-xl font-bold">3</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Develop</h3>
-                    <p class="text-gray-600">Build your solution using agile development practices.</p>
-                </div>
-                
-                <div class="process-step text-center">
-                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-xl font-bold">4</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Deploy</h3>
-                    <p class="text-gray-600">Launch your solution with full support and training.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonial Section -->
-    <section class="testimonial-bg section-padding">
-        <div class="container mx-auto px-4">
-            <div class="text-center">
-                <div class="max-w-4xl mx-auto">
-                    <div class="text-6xl text-blue-600 mb-4">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <blockquote class="text-2xl md:text-3xl font-light mb-8 text-gray-700">
-                        "I have worked with industry thoughtful years of top-rated companies and critical stakeholder engagements during my tenure at DocuSign. Their technical expertise, understanding of complex use cases, ability to bring solutions to life and strong focus on customer success have all been key to delivering outcomes that go above and beyond customer expectations."
-                    </blockquote>
-                    <div class="flex items-center justify-center space-x-4">
-                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
-                            <i class="fas fa-user text-blue-600 text-xl"></i>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="service-card card bg-white shadow-lg hover:shadow-xl">
+                        <div class="card-body text-center">
+                            <div
+                                class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-cogs text-2xl text-blue-600"></i>
+                            </div>
+                            <h3 class="card-title justify-center mb-4">Workflow Automation</h3>
+                            <p class="text-gray-600">
+                                Eliminate manual processes and reduce errors with intelligent automation solutions
+                                tailored
+                                to your business needs.
+                            </p>
                         </div>
-                        <div class="text-left">
-                            <div class="font-bold text-lg">John Kick</div>
-                            <div class="text-gray-600">Strategic Account Executive, Enterprise | DocuSign</div>
+                    </div>
+                    <div class="service-card card bg-white shadow-lg hover:shadow-xl">
+                        <div class="card-body text-center">
+                            <div
+                                class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-file-alt text-2xl text-green-600"></i>
+                            </div>
+                            <h3 class="card-title justify-center mb-4">Document Management</h3>
+                            <p class="text-gray-600">
+                                Centralize, organize, and secure your documents with powerful management systems that
+                                enhance collaboration.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service-card card bg-white shadow-lg hover:shadow-xl">
+                        <div class="card-body text-center">
+                            <div
+                                class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-laptop-code text-2xl text-purple-600"></i>
+                            </div>
+                            <h3 class="card-title justify-center mb-4">Custom Development</h3>
+                            <p class="text-gray-600">
+                                From web applications to enterprise systems, we build custom solutions that perfectly
+                                fit
+                                your requirements.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section id="contact" class="hero-gradient text-white section-padding">
-        <div class="container mx-auto px-4">
-            <div class="text-center">
-                <h2 class="text-4xl font-bold mb-4">Ready to Transform Your Business?</h2>
-                <p class="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
-                    Let's discuss how custom software solutions can streamline your operations and drive growth.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="mailto:info@informasoftware.com" class="btn btn-primary btn-lg">
-                        <i class="fas fa-envelope mr-2"></i>
-                        Get Free Consultation
-                    </a>
-                    <a href="tel:+1234567890" class="btn btn-outline btn-lg text-white border-white hover:bg-white hover:text-blue-600">
-                        <i class="fas fa-phone mr-2"></i>
-                        Call Us Today
-                    </a>
+        </section>
+        <!-- Solutions Section -->
+        <section id="solutions" class="section-padding">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">Proven Solutions</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Real results from real implementations. See how we've transformed businesses like yours.
+                    </p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                            alt="Business team collaborating" class="rounded-lg shadow-lg">
+                    </div>
+                    <div>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-check text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Enterprise Integration</h3>
+                                    <p class="text-gray-600">Seamlessly connect your existing systems with modern APIs
+                                        and
+                                        custom integrations.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-check text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Process Optimization</h3>
+                                    <p class="text-gray-600">Identify bottlenecks and implement solutions that improve
+                                        efficiency by up to 300%.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-check text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Scalable Architecture</h3>
+                                    <p class="text-gray-600">Build for today, scale for tomorrow with cloud-native
+                                        solutions
+                                        that grow with your business.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- Process Section -->
+        <section class="section-padding bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">Our Process</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        A proven methodology that delivers results on time and within budget.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="process-step text-center">
+                        <div
+                            class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-xl font-bold">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Discovery</h3>
+                        <p class="text-gray-600">We analyze your needs and define project requirements.</p>
+                    </div>
+                    <div class="process-step text-center">
+                        <div
+                            class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-xl font-bold">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Design</h3>
+                        <p class="text-gray-600">Create detailed specifications and user experience designs.</p>
+                    </div>
+                    <div class="process-step text-center">
+                        <div
+                            class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-xl font-bold">3</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Develop</h3>
+                        <p class="text-gray-600">Build your solution using agile development practices.</p>
+                    </div>
+                    <div class="process-step text-center">
+                        <div
+                            class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-xl font-bold">4</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Deploy</h3>
+                        <p class="text-gray-600">Launch your solution with full support and training.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial Section -->
+        <section class="testimonial-bg section-padding">
+            <div class="container mx-auto px-4">
+                <div class="text-center">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="text-6xl text-blue-600 mb-4">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <blockquote class="text-2xl md:text-3xl font-light mb-8 text-gray-700">
+                            "I have worked with industry thoughtful years of top-rated companies and critical
+                            stakeholder
+                            engagements during my tenure at DocuSign. Their technical expertise, understanding of
+                            complex
+                            use cases, ability to bring solutions to life and strong focus on customer success have all
+                            been
+                            key to delivering outcomes that go above and beyond customer expectations."
+                        </blockquote>
+                        <div class="flex items-center justify-center space-x-4">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="text-left">
+                                <div class="font-bold text-lg">John Kick</div>
+                                <div class="text-gray-600">Strategic Account Executive, Enterprise | DocuSign</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section id="contact" class="hero-gradient text-white section-padding">
+            <div class="container mx-auto px-4">
+                <div class="text-center">
+                    <h2 class="text-4xl font-bold mb-4">Ready to Transform Your Business?</h2>
+                    <p class="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
+                        Let's discuss how custom software solutions can streamline your operations and drive growth.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="mailto:info@informasoftware.com" class="btn btn-primary btn-lg">
+                            <i class="fas fa-envelope mr-2"></i>
+                            Get Free Consultation
+                        </a>
+                        <a href="tel:+1234567890"
+                            class="btn btn-outline btn-lg text-white border-white hover:bg-white hover:text-blue-600">
+                            <i class="fas fa-phone mr-2"></i>
+                            Call Us Today
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
@@ -353,7 +370,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div>
                     <h3 class="text-lg font-bold mb-4">Services</h3>
                     <ul class="space-y-2 text-gray-400">
@@ -363,7 +380,7 @@
                         <li><a href="#" class="hover:text-white">API Integration</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h3 class="text-lg font-bold mb-4">Company</h3>
                     <ul class="space-y-2 text-gray-400">
@@ -373,7 +390,7 @@
                         <li><a href="#" class="hover:text-white">Contact</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h3 class="text-lg font-bold mb-4">Contact</h3>
                     <ul class="space-y-2 text-gray-400">
@@ -383,7 +400,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
                 <p>&copy; 2024 InformaSoftware. All rights reserved.</p>
             </div>
@@ -406,7 +423,7 @@
         });
 
         // Add shadow to navbar on scroll
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
                 navbar.classList.add('shadow-lg');
@@ -416,4 +433,5 @@
         });
     </script>
 </body>
+
 </html>
